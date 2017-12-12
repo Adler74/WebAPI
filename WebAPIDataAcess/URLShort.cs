@@ -17,5 +17,6 @@ namespace WebAPIDataAcess
         public int urlid { get; set; }
         public string url { get; set; }
         public Nullable<int> urlcount { get; set; }
+        public string urlshort { get; set; }
     }
 }

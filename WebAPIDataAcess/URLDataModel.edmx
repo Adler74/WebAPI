@@ -12,6 +12,7 @@
           <Property Name="urlid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="url" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="urlcount" Type="int" />
+          <Property Name="urlshort" Type="varchar" MaxLength="100" Nullable="false" />
         </EntityType>
         <EntityContainer Name="TestesModelStoreContainer">
           <EntitySet Name="URLShort" EntityType="Self.URLShort" Schema="dbo" store:Type="Tables" />
@@ -30,6 +31,7 @@
           <Property Name="urlid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="url" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="urlcount" Type="Int32" />
+          <Property Name="urlshort" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -40,6 +42,7 @@
         <EntitySetMapping Name="URLShorts">
             <EntityTypeMapping TypeName="TestesModel.URLShort">
               <MappingFragment StoreEntitySet="URLShort">
+                <ScalarProperty Name="urlshort" ColumnName="urlshort" />
                 <ScalarProperty Name="urlcount" ColumnName="urlcount" />
                 <ScalarProperty Name="url" ColumnName="url" />
                 <ScalarProperty Name="urlid" ColumnName="urlid" />
