@@ -12,7 +12,7 @@ Você precisa configurar o arquivo web.config.
   </connectionStrings>
 </configuration>
 
-Você precisa criar um Database e uma tabela que estão nos arquivos:
+Você precisa criar um Database e uma tabela no SQLServer que estão nos arquivos:
 - DataBase.sql
-- BancodeDados.sql
+- Tabela.sql
 
